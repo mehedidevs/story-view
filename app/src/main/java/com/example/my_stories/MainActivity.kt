@@ -50,12 +50,13 @@ class MainActivity : AppCompatActivity() {
 
     private var pressTime = 0L
     private var limit = 500L
-    private val sliderHandler = Handler()
-    lateinit var adapter: OnboardingAdapter
+
 
     lateinit var binding: ActivityMainBinding
     var currentIndex = 0
     var hasMoreStory = true
+    private val sliderHandler = Handler()
+    lateinit var adapter: OnboardingAdapter
 
     private val sliderRunnable =
         Runnable { binding.introViewPager.currentItem = binding.introViewPager.currentItem + 1 }

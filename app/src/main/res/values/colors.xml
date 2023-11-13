@@ -14,4 +14,9 @@
     <color name="colorAccent">#FF4081</color>
     <color name="purple">#673AB7</color>
 
+
+    <color name="progress_max_active">@color/white</color>
+    <color name="gray_scale">#8affffff</color>
+
+
 </resources>

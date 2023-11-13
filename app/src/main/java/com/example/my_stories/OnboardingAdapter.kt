@@ -7,7 +7,7 @@ import androidx.viewpager2.widget.ViewPager2
 import com.example.my_stories.databinding.RowItemBinding
 
 
-class OnboardingAdapter(private val imageList: List<Int>) :
+class OnboardingAdapter(private var imageList: List<Int>) :
     RecyclerView.Adapter<OnboardingAdapter.ViewHolder>() {
     class ViewHolder(val binding: RowItemBinding) : RecyclerView.ViewHolder(binding.root) {
 
@@ -23,6 +23,11 @@ class OnboardingAdapter(private val imageList: List<Int>) :
                 imagePager.setImageResource(imageList[position])
             }
         }
+    }
+
+    fun updateData(newList: List<Int>) {
+        imageList = newList
+        notifyDataSetChanged()
     }
 
     override fun getItemCount() = imageList.size

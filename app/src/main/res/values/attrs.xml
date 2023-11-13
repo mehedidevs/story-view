@@ -5,4 +5,6 @@
         <attr name="progressColor" format="color"/>
         <attr name="progressBackgroundColor" format="color"/>
     </declare-styleable>
+
+
 </resources>
